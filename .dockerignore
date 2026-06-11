@@ -1,0 +1,22 @@
+# Never copy host build state into the image - it's installed/built inside.
+**/node_modules
+**/dist
+.git
+.gitignore
+
+# Local runtime state (persisted config, route + TLE caches). The image starts
+# from defaults; a mounted volume supplies these at runtime.
+server/data
+data
+
+# Deployment notes with household/LAN specifics
+HANDOFF.md
+
+# Editor / OS / scratch
+.claude
+.vscode
+.idea
+.DS_Store
+*.log
+.cam-explore.mjs
+tracker/models

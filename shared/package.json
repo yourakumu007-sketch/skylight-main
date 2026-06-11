@@ -1,0 +1,17 @@
+{
+  "name": "shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared types + pure math (geo, aim, celestial) for Skylight.",
+  "scripts": {
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "astronomy-engine": "^2.1.19",
+    "satellite.js": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
