@@ -1,0 +1,33 @@
+node_modules/
+dist/
+*.log
+
+# runtime state (persisted config, route + TLE caches)
+server/data/
+data/
+
+# deployment notes with LAN addresses / household-specific details — never commit
+HANDOFF.md
+CROP_FOLLOW_HANDOFF.md
+
+# local scratch
+.cam-explore.mjs
+core.*
+
+# editor / OS
+.DS_Store
+.env
+.env.local
+.idea/
+.vscode/
+
+
+# downloaded vision models (fetched at setup, not committed)
+tracker/models/
+
+# local harness state
+.claude/
+
+# stream credentials (instance env files) — examples stay committed
+stream/.env*
+!stream/.env*.example
